@@ -1,0 +1,32 @@
+{
+    "rt3d project": {
+        "image info": {
+            "height": 3000,
+            "width": 4000
+        },
+        "name": "hora_castle",
+        "output path": "C:\\Tiger\\Data\\Output\\hora_castle",
+        "profiles": {
+            "aircraft": {
+                "name": "Phantom4Pro"
+            },
+            "camera": {
+                "image interval": 0,
+                "iso": 100,
+                "name": "Phantom 4 Pro",
+                "sensor dim.": {
+                    "height": 0,
+                    "width": 0
+                },
+                "shutter speed": 1
+            },
+            "lens": {
+                "35mm focal len.": 0,
+                "aov": 0,
+                "aperture": 3,
+                "focal len.": 20.7,
+                "name": ""
+            }
+        }
+    }
+}

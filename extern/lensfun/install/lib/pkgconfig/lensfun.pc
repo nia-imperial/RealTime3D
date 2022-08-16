@@ -1,0 +1,13 @@
+prefix=C:/Users/arnoldn/CLionProjects/lensfun/install
+bindir=C:/Users/arnoldn/CLionProjects/lensfun/install/bin
+libdir=C:/Users/arnoldn/CLionProjects/lensfun/install/lib
+includedir=C:/Users/arnoldn/CLionProjects/lensfun/install/include
+datadir=C:/ProgramData
+docdir=C:/ProgramData/doc/lensfun
+
+Name: lensfun
+Description: A photographic lens database and access library
+Version: 0.3.95.0
+Requires.private: glib-2.0
+Libs: -L${libdir} -llensfun
+Cflags: -I${includedir} -I${includedir}/lensfun

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlightParameters</class>
+ <widget class="QWidget" name="FlightParameters">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>298</width>
+    <height>390</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="settingsWidget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QComboBox" name="shootingTypeCmbo">
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Image Interval</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Camera Baseline</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QGroupBox" name="calculationsGroup">
+        <property name="title">
+         <string>Calculations</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QGroupBox" name="groundPixelGrp">
+           <property name="title">
+            <string>Ground pixel Size</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_4">
+            <item row="0" column="0">
+             <widget class="QDoubleSpinBox" name="groundPixelSizeSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.989999999999782</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="groundPixelMetricLbl">
+              <property name="text">
+               <string>cm</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="imageIntervalGrp">
+           <property name="title">
+            <string>Image Interval Size</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_3">
+            <item row="0" column="0">
+             <widget class="QDoubleSpinBox" name="imageIntvSizeSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.989999999999782</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="imageIntvMetricLbl">
+              <property name="text">
+               <string>m</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="imageOverlapGrp">
+           <property name="title">
+            <string>Image Overlap</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_5">
+            <item row="0" column="0">
+             <widget class="QDoubleSpinBox" name="imageOverlapSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.000000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="imageOverlapMetricCmbo">
+              <property name="minimumSize">
+               <size>
+                <width>39</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <item>
+               <property name="text">
+                <string>%</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>m</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="imageGroundGrp">
+           <property name="title">
+            <string>Image Ground Size</string>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_7">
+            <item row="0" column="0">
+             <widget class="QLabel" name="imgGrndYLbl">
+              <property name="text">
+               <string>x</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="imageGroundSizeYSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.989999999999782</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="imgGrndMetricXLbl">
+              <property name="text">
+               <string>m</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="imgGrndXLbl">
+              <property name="text">
+               <string>y</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QDoubleSpinBox" name="imageGroundSizeXSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.989999999999782</double>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QLabel" name="imgGrndMetricYLbl">
+              <property name="text">
+               <string>m</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="motionBlurGrp">
+           <property name="title">
+            <string>Motion Blur</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QDoubleSpinBox" name="motionBlurSpin">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="buttonSymbols">
+               <enum>QAbstractSpinBox::NoButtons</enum>
+              </property>
+              <property name="maximum">
+               <double>9999.989999999999782</double>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QComboBox" name="motionBlurMetricCmbo">
+              <property name="minimumSize">
+               <size>
+                <width>39</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <item>
+               <property name="text">
+                <string>cm</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>px</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

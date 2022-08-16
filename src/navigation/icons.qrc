@@ -1,0 +1,12 @@
+<!DOCTYPE RCC><RCC version="1.0">
+  <qresource>
+    <file>icons/UX-UI-Icon_11.svg</file>
+    <file>icons/UX-UI-Icon_29.svg</file>
+    <file>icons/UX-UI-Icon_31.svg</file>
+    <file>icons/UX-UI-Icon_35.svg</file>
+    <file>icons/UX-UI-Icon_36.svg</file>
+    <file>icons/UX-UI-Icon_38.svg</file>
+    <file>icons/select_cursor.svg</file>
+    <file>icons/select_icon.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,16 @@
+{
+    "Camera_baseline": 18,
+    "Flight_altitude": 200,
+    "Frame_shift": {
+        "Reference_shift_x": 0,
+        "Reference_shift_y": 0,
+        "Secondary_shift_x": 24,
+        "Secondary_shift_y": -387
+    },
+    "Log_prefix": "hora",
+    "Metres_per_pixel": 0.2,
+    "Output_prefix": "hora",
+    "Phase_correlation_method": "CurveFit1",
+    "Step_size": 1,
+    "Window_size": "16"
+}

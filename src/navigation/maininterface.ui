@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainInterface</class>
+ <widget class="QMainWindow" name="MainInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>501</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="dockOptions">
+   <set>QMainWindow::AllowNestedDocks|QMainWindow::AllowTabbedDocks|QMainWindow::AnimatedDocks</set>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="waypointWidget">
+   <property name="windowTitle">
+    <string>Waypoint Editor</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="waypointWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QTabWidget" name="editorTabs">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="waypointTab">
+        <attribute name="title">
+         <string>Waypoints</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTableView" name="waypointView">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="coordLineEdit">
+              <property name="inputMethodHints">
+               <set>Qt::ImhPreferNumbers</set>
+              </property>
+              <property name="readOnly">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>x, y, z</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="addCoordsBtn">
+              <property name="text">
+               <string>Add Waypoint</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="targetpointTab">
+        <attribute name="title">
+         <string>Calculated Points</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_4">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QTableView" name="targetpointView"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="layerWidget">
+   <property name="windowTitle">
+    <string>Layer View</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="layerWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="leftMargin">
+      <number>0</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="rightMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="layerSettings">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Sunken</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>4</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>2</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>2</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>7</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Opacity:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QFrame" name="frame">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Panel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Plain</enum>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QSpinBox" name="opacityBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>7</pointsize>
+              </font>
+             </property>
+             <property name="frame">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::NoButtons</enum>
+             </property>
+             <property name="suffix">
+              <string>%</string>
+             </property>
+             <property name="maximum">
+              <number>100</number>
+             </property>
+             <property name="value">
+              <number>100</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line">
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="opacityButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="icon">
+              <iconset resource="icons.qrc">
+               <normaloff>:/icons/UX-UI-Icon_11.svg</normaloff>:/icons/UX-UI-Icon_11.svg</iconset>
+             </property>
+             <property name="iconSize">
+              <size>
+               <width>16</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="autoDefault">
+              <bool>false</bool>
+             </property>
+             <property name="default">
+              <bool>false</bool>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTreeView" name="layerView"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNoTool"/>
+   <addaction name="actionToolSelect"/>
+   <addaction name="actionToolPlacer"/>
+   <addaction name="actionToolConnector"/>
+   <addaction name="actionPanMovement"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1063</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuOpen">
+     <property name="title">
+      <string>Open</string>
+     </property>
+     <addaction name="actionBase_Map"/>
+     <addaction name="actionWaypoints"/>
+    </widget>
+    <widget class="QMenu" name="menuSave">
+     <property name="title">
+      <string>Save</string>
+     </property>
+     <addaction name="actionSaveWaypoints"/>
+     <addaction name="actionSaveTargets"/>
+    </widget>
+    <addaction name="menuOpen"/>
+    <addaction name="menuSave"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Window</string>
+    </property>
+    <addaction name="actionWaypoint_Editor"/>
+    <addaction name="actionLayer_View"/>
+   </widget>
+   <widget class="QMenu" name="menuFlight_Tools">
+    <property name="title">
+     <string>Flight Tools</string>
+    </property>
+    <addaction name="actionAdd_Flight_Image"/>
+    <addaction name="actionConnect_to_Camera"/>
+    <addaction name="separator"/>
+    <addaction name="actionPerspectiveViewMatching"/>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuFlight_Tools"/>
+  </widget>
+  <action name="actionBase_Map">
+   <property name="text">
+    <string>Base Map</string>
+   </property>
+   <property name="statusTip">
+    <string>Open a base map image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionWaypoints">
+   <property name="text">
+    <string>Waypoints</string>
+   </property>
+   <property name="statusTip">
+    <string>Open waypoints from csv file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+.</string>
+   </property>
+  </action>
+  <action name="actionWaypoint_Editor">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Waypoint Editor</string>
+   </property>
+   <property name="statusTip">
+    <string>Activate the waypoint editor panel</string>
+   </property>
+  </action>
+  <action name="actionLayer_View">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Layer View</string>
+   </property>
+   <property name="statusTip">
+    <string>Active the layer view panel</string>
+   </property>
+  </action>
+  <action name="actionSaveMissionImage">
+   <property name="text">
+    <string>Mission Image as</string>
+   </property>
+   <property name="statusTip">
+    <string/>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSaveWaypoints">
+   <property name="text">
+    <string>Waypoints to file</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+;</string>
+   </property>
+  </action>
+  <action name="actionToolSelect">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/UX-UI-Icon_36.svg</normaloff>
+     <normalon>:/icons/UX-UI-Icon_36.svg</normalon>:/icons/UX-UI-Icon_36.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Selection Tool</string>
+   </property>
+   <property name="iconText">
+    <string>ST</string>
+   </property>
+   <property name="shortcut">
+    <string>V</string>
+   </property>
+  </action>
+  <action name="actionToolPlacer">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/UX-UI-Icon_35.svg</normaloff>:/icons/UX-UI-Icon_35.svg</iconset>
+   </property>
+   <property name="text">
+    <string>WaypointPlacer</string>
+   </property>
+   <property name="iconText">
+    <string>WP</string>
+   </property>
+   <property name="toolTip">
+    <string>Waypoint Placer</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="actionToolConnector">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/UX-UI-Icon_38.svg</normaloff>:/icons/UX-UI-Icon_38.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Connector</string>
+   </property>
+   <property name="iconText">
+    <string>CT</string>
+   </property>
+   <property name="toolTip">
+    <string>Connection Tool</string>
+   </property>
+   <property name="shortcut">
+    <string>C</string>
+   </property>
+  </action>
+  <action name="actionPanMovement">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/UX-UI-Icon_31.svg</normaloff>:/icons/UX-UI-Icon_31.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Movement Tool</string>
+   </property>
+   <property name="iconText">
+    <string>MT</string>
+   </property>
+   <property name="toolTip">
+    <string>Movement Only Tool.</string>
+   </property>
+   <property name="shortcut">
+    <string>P</string>
+   </property>
+  </action>
+  <action name="actionSimulate_Image">
+   <property name="text">
+    <string>Simulate Image</string>
+   </property>
+  </action>
+  <action name="actionSaveTargets">
+   <property name="text">
+    <string>Target points to file</string>
+   </property>
+  </action>
+  <action name="actionSimulate_Flight_Images">
+   <property name="text">
+    <string>Simulate Flight Images</string>
+   </property>
+  </action>
+  <action name="actionNoTool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/UX-UI-Icon_29.svg</normaloff>:/icons/UX-UI-Icon_29.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Multi-Tool</string>
+   </property>
+   <property name="iconText">
+    <string>MT</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Multi-Purpose Tool. &lt;/p&gt;&lt;p&gt;Tool mode can be changed by key modifiers: &lt;/p&gt;&lt;p&gt;Ctrl + Left Click -&amp;gt; Connection Tool &lt;/p&gt;&lt;p&gt;Alt + Left Click -&amp;gt; Add waypoint Tool &lt;/p&gt;&lt;p&gt;Shift + Left Click &amp;amp; Drag -&amp;gt; Selection Tool &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionImage_View_matching">
+   <property name="text">
+    <string>Image-view matching </string>
+   </property>
+  </action>
+  <action name="actionTool_Panel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Tool Panel</string>
+   </property>
+  </action>
+  <action name="actionPerspectiveViewMatching">
+   <property name="text">
+    <string>View Matcher</string>
+   </property>
+   <property name="statusTip">
+    <string>Load oblique view image. Image is matched to (nadir) basemap image.</string>
+   </property>
+  </action>
+  <action name="actionConnect_to_Camera">
+   <property name="text">
+    <string>Setup Watch on Directory</string>
+   </property>
+   <property name="statusTip">
+    <string>Begins watch on directory for new flight images</string>
+   </property>
+  </action>
+  <action name="actionAdd_Flight_Image">
+   <property name="text">
+    <string>Add Flight Image</string>
+   </property>
+   <property name="toolTip">
+    <string>Add flight image and calculate position.</string>
+   </property>
+   <property name="statusTip">
+    <string>Opens a flight image from path and calculate aircraft position</string>
+   </property>
+  </action>
+  <zorder>waypointWidget</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>layerView</tabstop>
+  <tabstop>opacityBox</tabstop>
+  <tabstop>opacityButton</tabstop>
+  <tabstop>editorTabs</tabstop>
+  <tabstop>waypointView</tabstop>
+  <tabstop>coordLineEdit</tabstop>
+  <tabstop>addCoordsBtn</tabstop>
+  <tabstop>targetpointView</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>waypointWidget</sender>
+   <signal>visibilityChanged(bool)</signal>
+   <receiver>actionWaypoint_Editor</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>layerWidget</sender>
+   <signal>visibilityChanged(bool)</signal>
+   <receiver>actionLayer_View</receiver>
+   <slot>setChecked(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>616</x>
+     <y>300</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

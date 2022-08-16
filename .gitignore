@@ -1,0 +1,9 @@
+**/.idea
+**/build
+**/cmake-build*
+**/tmp
+items/*
+**/old
+.venv
+Release
+dist

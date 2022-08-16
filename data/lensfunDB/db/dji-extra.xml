@@ -1,0 +1,266 @@
+<lensdatabase version="2">
+
+    <camera>
+        <maker>DJI</maker>
+        <model>Phantom 4 Pro</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>DJI</maker>
+        <model>FC330</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>DJI</maker>
+        <model>FC350</model>
+        <mount>compactCamera4382422540710994202</mount>
+        <cropfactor>5.6</cropfactor>
+    </camera>
+
+    <camera>
+        <maker>DJI</maker>
+        <model>FC350</model>
+        <mount>compactCamera8372672009263908331</mount>
+        <cropfactor>5.6</cropfactor>
+    </camera>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 3 FC300S</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132569" k2="0.101281" k3="-0.018193" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>DJI Mavic Pro FC220 (JPEGs)</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="4.7" model="acm" k1="0.027899" k2="-0.209893" k3="0.259529" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>DJI Mavic Pro FC220</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="4.7" model="acm" k1="0.027899" k2="-0.209893" k3="0.259529" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>INSPIRE 1 FC350</model>
+        <model lang="en">fixed lens</model>
+        <model lang="de">festes Objektiv</model>
+        <mount>compactCamera4382422540710994202</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132569" k2="0.101281" k3="-0.018193" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>Zenmuse</maker>
+        <model>ZENMUSE X3 HG310</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132569" k2="0.101281" k3="-0.018193" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 3 FC300X</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132569" k2="0.101281" k3="-0.018193" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 3 FC300C</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132569" k2="0.101281" k3="-0.018193" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (JPEG1)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.004567" k2="-0.006062" k3="0.003042" />
+<!--            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="1.322811" alpha1="-0.341864" alpha2="0.315111" alpha3="-0.2809" />-->
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (JPEG2)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.004567" k2="-0.006062" k3="0.003042" />
+            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="1.322811" alpha1="-0.056096" alpha2="0.036316" alpha3="-0.019203" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (RAW1)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.026868" k2="0.007484" k3="-0.004573" />
+<!--            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="1.322811" alpha1="-0.056096" alpha2="0.036316" alpha3="-0.019203" />-->
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (RAW2)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.026868" k2="0.007484" k3="-0.004573" />
+            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="1.322811" alpha1="-0.341864" alpha2="0.315111" alpha3="-0.2809" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (RAW)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.026868" k2="0.007484" k3="-0.004573" />
+            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="3" alpha1="-0.341864" alpha2="0.315111" alpha3="-0.2809" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>PHANTOM 4 FC330 (JPEG)</model>
+        <mount>djiPhantom4ProFC330</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.004567" k2="-0.006062" k3="0.003042" />
+<!--            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="1.322811" alpha1="-0.056096" alpha2="0.036316" alpha3="-0.019203" />-->
+            <vignetting focal="20.7" model="acm" aperture="2.970854" distance="3" alpha1="-0.056096" alpha2="0.036316" alpha3="-0.019203" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>INSPIRE 1 FC350 (JPEGs)</model>
+        <model lang="en">fixed lens (JPEGs)</model>
+        <model lang="de">festes Objektiv (JPEGs)</model>
+        <mount>compactCamera8372672009263908331</mount>
+        <cropfactor>5.6</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132236" k2="0.099737" k3="-0.017192" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>DJI</maker>
+        <model>DJI Osmo Action</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.64</cropfactor>
+        <calibration>
+            <distortion focal="15.0" model="acm" k1="-4.526539" k2="14.73323" k3="-18.253679" />
+        </calibration>
+    </lens>
+
+    <lens>
+        <maker>Zenmuse</maker>
+        <model>ZENMUSE X3 HG310 (JPEGs)</model>
+        <mount>Olympus OM</mount>
+        <mount>Sigma SA</mount>
+        <mount>Pentax KAF</mount>
+        <mount>Canon FD</mount>
+        <mount>Minolta AF</mount>
+        <mount>Sony Alpha</mount>
+        <mount>4/3 System</mount>
+        <mount>Canon EF</mount>
+        <mount>Nikon F AF</mount>
+        <cropfactor>5.7</cropfactor>
+        <calibration>
+            <distortion focal="20.7" model="acm" k1="-0.132236" k2="0.099737" k3="-0.017192" />
+        </calibration>
+    </lens>
+
+</lensdatabase>

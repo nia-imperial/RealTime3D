@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LensProfile</class>
+ <widget class="QWidget" name="LensProfile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>354</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="1">
+      <widget class="QDoubleSpinBox" name="aperture">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Aperture size &lt;/span&gt;(f/-stop)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="prefix">
+        <string>Aperture: f/</string>
+       </property>
+       <property name="decimals">
+        <number>1</number>
+       </property>
+       <property name="singleStep">
+        <double>0.100000000000000</double>
+       </property>
+       <property name="stepType">
+        <enum>QAbstractSpinBox::AdaptiveDecimalStepType</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QDoubleSpinBox" name="focalLen">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Focal length&lt;/span&gt; (mm)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="inputMethodHints">
+        <set>Qt::ImhNone</set>
+       </property>
+       <property name="frame">
+        <bool>false</bool>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+       <property name="buttonSymbols">
+        <enum>QAbstractSpinBox::NoButtons</enum>
+       </property>
+       <property name="prefix">
+        <string>Focal Length: </string>
+       </property>
+       <property name="suffix">
+        <string> mm</string>
+       </property>
+       <property name="decimals">
+        <number>2</number>
+       </property>
+       <property name="maximum">
+        <double>9999.000000000000000</double>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>Profile:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="chooseProfile">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLengthWithIcon</enum>
+       </property>
+       <item>
+        <property name="text">
+         <string>Choose Profile</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="loadProfile">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="text">
+        <string>load</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <layout class="QFormLayout" name="formLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="fflenLabel">
+        <property name="text">
+         <string>35mm Focal Length:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="aovLabel">
+        <property name="text">
+         <string>Angle of View:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QDoubleSpinBox" name="angleOfView">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lens' angle of view (degrees)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> deg.</string>
+        </property>
+        <property name="decimals">
+         <number>0</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Aperture Range:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="apertureMinMax">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lens' aperture range&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>F/</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Focal Len. Range:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="focalLenMinMax">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Lens' focal range&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+        <property name="placeholderText">
+         <string>mm</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QDoubleSpinBox" name="focalLen_ff">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;35mm focal length equiv. (millimetres)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="inputMethodHints">
+         <set>Qt::ImhNone</set>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="readOnly">
+         <bool>false</bool>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::NoButtons</enum>
+        </property>
+        <property name="suffix">
+         <string> mm</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>focalLen</tabstop>
+  <tabstop>aperture</tabstop>
+  <tabstop>chooseProfile</tabstop>
+  <tabstop>loadProfile</tabstop>
+  <tabstop>apertureMinMax</tabstop>
+  <tabstop>focalLenMinMax</tabstop>
+  <tabstop>focalLen_ff</tabstop>
+  <tabstop>angleOfView</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
